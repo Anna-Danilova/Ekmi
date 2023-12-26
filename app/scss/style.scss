@@ -1,8 +1,10 @@
-@import "normalize.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "general.scss";
+@import 'normalize.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'general.scss';
 
-@import "blocks/header";
-@import "blocks/menu";
-@import "blocks/select";
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/select';
+
+@import 'media.scss';

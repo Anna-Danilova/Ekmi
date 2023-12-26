@@ -1,0 +1,105 @@
+@media (max-width: 1080px) {
+  .header {
+    padding: 18px 0;
+    &__wrapper {
+      justify-content: center;
+      gap: 30px;
+    }
+
+    &__content {
+      gap: 25px;
+    }
+
+    &__logo {
+      order: -1;
+    }
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu {
+    &__list {
+      gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__wrapper {
+      justify-content: space-between;
+      gap: 33px;
+    }
+
+    &__content {
+      .menu {
+        display: none;
+      }
+    }
+
+    &__language-select {
+      order: -1;
+    }
+    &__phone {
+      width: 21px;
+      height: 21px;
+      background-image: url(../images/icons/phone.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__phone-number {
+      display: none;
+    }
+    &__hamburger {
+      display: block;
+    }
+  }
+
+  .logo {
+    width: 92px;
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 240px;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.5s ease, visibility 0.5s ease;
+
+    &--open {
+      transform: none;
+      visibility: visible;
+    }
+
+    &__list {
+      flex-direction: column;
+      padding: 28px 8px;
+      gap: 0;
+    }
+
+    &__link {
+      padding: 10px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 135%;
+      text-transform: none;
+    }
+
+    &__submenu {
+      position: static;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}

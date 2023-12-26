@@ -1,7 +1,7 @@
 // SELECTOR
 function select() {
-  let selectHeader = document.querySelectorAll('.select__header');
-  let selectItem = document.querySelectorAll('.select__item');
+  const selectHeader = document.querySelectorAll('.select__header');
+  const selectItem = document.querySelectorAll('.select__item');
 
   selectHeader.forEach((item) => {
     item.addEventListener('click', function () {
@@ -20,7 +20,7 @@ function select() {
   });
 
   window.addEventListener('click', function (event) {
-    let select = document.querySelectorAll('.select');
+    const select = document.querySelectorAll('.select');
     if (!event.target.closest('.select')) {
       select.forEach((item) => {
         item.classList.remove('select--active');
@@ -29,3 +29,12 @@ function select() {
   });
 }
 select();
+
+//MAIN-MENU
+
+const menu = document.querySelector('.menu');
+const hamburger = document.querySelector('.header__hamburger');
+hamburger.addEventListener('click', function () {
+  menu.classList.toggle('menu--open');
+  hamburger.classList.toggle('header__hamburger--menu-open');
+});
