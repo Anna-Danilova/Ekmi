@@ -10,9 +10,13 @@ html {
   padding: 0;
 }
 
-.body {
-  font-family: "Raleway", serif;
+body {
+  font-family: $main-font;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -35,5 +39,12 @@ input[type="radio"].visually-hidden {
 
 .container {
   max-width: 1206px;
+  margin: 0 auto;
   padding: 0 18px;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

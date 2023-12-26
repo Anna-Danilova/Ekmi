@@ -1,0 +1,35 @@
+.header {
+  min-height: 90px;
+  padding: 25px 0;
+  background-color: $main-color;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+  }
+
+  &__phone-number {
+    color: $main-text-color;
+    font-family: $second-font;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+}
+
+@media (any-hover: hover) {
+  .header {
+    &__phone-number:hover {
+      color: $decorative-color;
+    }
+  }
+}
