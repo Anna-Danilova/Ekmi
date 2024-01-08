@@ -1,6 +1,7 @@
 .footer {
   background-color: #5b5b5b;
   padding-bottom: 30px;
+
   &__decorate-wrapper {
     background-color: $main-color;
   }
@@ -19,6 +20,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 80px 0;
   }
 
@@ -38,6 +40,12 @@
     text-transform: capitalize;
     color: $main-color;
     transition: color 0.3s ease;
+  }
+
+  &__social-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
   &__social-content {
@@ -78,11 +86,12 @@
   }
 
   &__copyright {
-    color: $main-color;
     text-align: center;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.92px;
+    text-transform: capitalize;
+    color: $main-color;
   }
 }
 
