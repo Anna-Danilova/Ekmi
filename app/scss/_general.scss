@@ -21,15 +21,6 @@ main {
   flex-grow: 1;
 }
 
-.page-wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
 }
@@ -37,6 +28,19 @@ a {
 p {
   margin: 0;
   cursor: default;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -57,20 +61,17 @@ input[type='radio'].visually-hidden {
   overflow: hidden;
 }
 
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1206px;
   margin: 0 auto;
   padding: 0 18px;
-}
-
-.reset-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.reset-btn {
-  padding: 0;
-  border: none;
-  background: transparent;
 }
