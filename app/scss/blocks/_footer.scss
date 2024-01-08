@@ -1,0 +1,106 @@
+.footer {
+  background-color: #5b5b5b;
+  padding-bottom: 30px;
+  &__decorate-wrapper {
+    background-color: $main-color;
+  }
+
+  &__decorate {
+    display: block;
+    font-size: 130px;
+    font-weight: 800;
+    letter-spacing: 16.9px;
+    color: #5b5b5b;
+    text-align: end;
+    cursor: default;
+    transform: translateY(30px);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+  }
+
+  &__menu-list {
+    max-width: 135px;
+  }
+
+  &__menu-item + &__menu-item {
+    margin-top: 25px;
+  }
+
+  &__menu-link {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 2.08px;
+    text-transform: capitalize;
+    color: $main-color;
+    transition: color 0.3s ease;
+  }
+
+  &__social-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 80px;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 14px;
+  }
+
+  &__social-link {
+    svg path {
+      stroke: $main-color;
+      transition: stroke 0.3s ease;
+    }
+  }
+
+  &__phone {
+    font-family: $second-font;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $main-color;
+    transition: color 0.3s ease;
+  }
+
+  &__button {
+    width: 270px;
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
+  &__copyright {
+    color: $main-color;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.92px;
+  }
+}
+
+@media (any-hover: hover) {
+  .footer {
+    &__social-link:hover {
+      svg path {
+        stroke: $decorative-color;
+        transition: stroke 0.3s ease;
+      }
+    }
+
+    &__phone:hover {
+      color: $decorative-color;
+    }
+
+    &__menu-link:hover {
+      color: $decorative-color;
+    }
+  }
+}

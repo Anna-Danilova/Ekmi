@@ -5,25 +5,38 @@
 }
 
 html {
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
+  height: 100%;
   font-family: $main-font;
   overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .page-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
+  cursor: default;
 }
 
 .visually-hidden:not(:focus):not(:active),
